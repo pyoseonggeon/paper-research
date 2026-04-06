@@ -13,7 +13,7 @@ description: 특정 주제에 대한 체계적 문헌 조사 스킬. literature-
 - 검색 데이터베이스 선택
 
 **Step 2: 문헌 탐색** (`literature-surveyor` 에이전트 실행)
-- 로컬 .docx 파일 탐색
+- 로컬 .docx 및 .pdf 파일 탐색
 - 웹 검색 (Google Scholar, PubMed, arXiv, Semantic Scholar)
 - 결과 통합 및 중복 제거
 
@@ -36,7 +36,7 @@ description: 특정 주제에 대한 체계적 문헌 조사 스킬. literature-
 - PubMed/MEDLINE: 의학/생명과학
 - arXiv: 물리학/CS/수학 (preprint 포함)
 - Semantic Scholar: AI 기반 추천 및 인용 분석
-- 로컬 프로젝트 디렉토리: 기존에 수집된 .docx 파일
+- 로컬 프로젝트 디렉토리: 기존에 수집된 .docx 및 .pdf 파일
 
 ## 출력
 - 검색 개요 (키워드, 기간, 데이터베이스)
@@ -52,4 +52,4 @@ description: 특정 주제에 대한 체계적 문헌 조사 스킬. literature-
 - 실제 존재하는 논문만 포함 (DOI/URL 확인)
 - 인용 수 등 수치는 검색 시점 기준
 - 한국어 사용자에게는 한국어로 응답
-- 로컬 파일은 `paper-reader`로 추가 파싱 가능
+- 로컬 .docx/.pdf 파일은 `paper-reader`로 추가 파싱 가능

@@ -1,6 +1,6 @@
 ---
 name: literature-surveyor
-description: 특정 주제/키워드에 대한 문헌 조사 수행. 웹 검색으로 관련 논문을 발굴하고, 연구 동향, 주요 저자, 핵심 저널, 연구 흐름을 정리한다. 로컬 .docx 파일과 웹 검색 결과를 통합 분석.
+description: 특정 주제/키워드에 대한 문헌 조사 수행. 웹 검색으로 관련 논문을 발굴하고, 연구 동향, 주요 저자, 핵심 저널, 연구 흐름을 정리한다. 로컬 .docx 및 .pdf 파일과 웹 검색 결과를 통합 분석.
 model: claude-sonnet-4-6
 tools:
   - WebSearch
@@ -24,9 +24,9 @@ tools:
 
 ### 1단계: 로컬 파일 탐색
 ```bash
-find . -name "*.docx" -o -name "*.pdf" | head -50
+find . \( -name "*.docx" -o -name "*.pdf" \) | head -50
 ```
-로컬에 있는 논문 파일 목록화
+로컬에 있는 논문 파일 목록화 (.docx + .pdf 모두)
 
 ### 2단계: 키워드 정제
 - 주어진 주제에서 핵심 키워드 추출

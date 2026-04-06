@@ -28,7 +28,9 @@
 - **QA 검증 없이 최종 보고서 발행 금지**
 
 ## 전제 도구
-- pandoc 3.x 이상 설치 필요 (`pandoc --version`)
+- pandoc 3.x 이상 (.docx 처리): 설치됨 (`pandoc --version`)
+- pdftotext (.pdf 텍스트 추출): 설치됨 (`pdftotext -v`)
+- pymupdf 1.27+ (.pdf 이미지 추출): 설치됨 (`python -c "import fitz; print(fitz.__version__)"`)
 - python-docx (pandoc fallback용): `pip install python-docx`
 
 ## 디렉토리 구조
